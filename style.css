@@ -204,8 +204,16 @@ section:last-of-type { border-bottom: none; }
   margin-bottom: 2rem;
 }
 .profile-term { max-width: 320px; margin-left: auto; }
-.profile-body { padding: 0; }
-.profile-body img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+.profile-code { padding: 1.6rem; }
+.profile-code pre {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: var(--ink);
+  white-space: pre-wrap;
+}
+.profile-code .k { color: var(--coral); }
+.profile-code .v { color: var(--lime); }
 
 /* ---------- About (README) ---------- */
 .readme-body { display: flex; flex-direction: column; gap: 1.8rem; }
