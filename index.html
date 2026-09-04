@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Areeba Malik — Computer Science Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div id="boot">
+  <div class="boot-line"><span class="prompt">areeba@portfolio</span><span class="boot-sep">:~$</span> <span id="boot-text"></span><span class="cursor">_</span></div>
+</div>
+
+<header id="site-header">
+  <nav>
+    <div class="logo">&lt;Areeba Malik/&gt;</div>
+    <ul id="nav-links">
+      <li><a href="#home">home.html</a></li>
+      <li><a href="#about">about.md</a></li>
+      <li><a href="#skills">skills.json</a></li>
+      <li><a href="#projects">projects/</a></li>
+      <li><a href="#education">log.txt</a></li>
+      <li><a href="#contact">contact.sh</a></li>
+    </ul>
+    <button id="nav-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <p class="mono-label">root@areeba <span class="muted">~</span></p>
+      <h1>Areeba Malik</h1>
+      <h2><span id="typing"></span><span class="type-cursor">|</span></h2>
+      <p class="hero-description">
+        A Computer Science student who builds software that reads between the lines,
+        from chat analyzers that catch toxicity to tools that quietly make life easier.
+        Currently two years into a CS degree, leaning hard into ML and NLP.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">See what I've built</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="term-window profile-term">
+        <div class="term-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="term-title">areeba.png</span>
+        </div>
+        <div class="term-body profile-body">
+          <img src="images/A.png" alt="Areeba Malik">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="term-window readme">
+    <div class="term-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="term-title">about.md</span>
+    </div>
+    <div class="term-body readme-body">
+      <div class="md-block">
+        <p class="md-heading"><i class="fa-solid fa-user-graduate"></i> Education</p>
+        <p>I'm currently pursuing a Bachelor's degree in Computer Science. I've completed two years of my degree and am continuing to expand my knowledge in databases, artificial intelligence, and machine learning.</p>
+      </div>
+      <div class="md-block">
+        <p class="md-heading"><i class="fa-solid fa-code"></i> What I Love</p>
+        <p>I enjoy turning ideas into software, building meaningful applications, and exploring new technologies that make life easier through code.</p>
+      </div>
+      <div class="md-block">
+        <p class="md-heading"><i class="fa-solid fa-lightbulb"></i> My Goal</p>
+        <p>To become a software engineer capable of building impactful applications, learning continuously, and contributing to innovative projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-list">
+
+    <div class="skill-row">
+      <i class="fa-brands fa-python"></i>
+      <div class="skill-text">
+        <h3>Python</h3>
+        <p>Machine learning, automation, data analysis</p>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <i class="fa-solid fa-brain"></i>
+      <div class="skill-text">
+        <h3>Machine Learning</h3>
+        <p>Scikit-learn, Pandas, NumPy, NLTK</p>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <i class="fa-brands fa-java"></i>
+      <div class="skill-text">
+        <h3>Java</h3>
+        <p>Object-oriented programming, Java Swing</p>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <i class="fa-solid fa-database"></i>
+      <div class="skill-text">
+        <h3>Databases</h3>
+        <p>MySQL, Oracle SQL, PostgreSQL</p>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <i class="fa-brands fa-github"></i>
+      <div class="skill-text">
+        <h3>Git &amp; GitHub</h3>
+        <p>Version control, open source, project hosting</p>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <i class="fa-solid fa-laptop-code"></i>
+      <div class="skill-text">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="projects-grid">
+
+    <div class="term-window project-card">
+      <div class="term-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="term-title">whatsapp_chat_analyzer.py</span>
+      </div>
+      <div class="term-body">
+        <h3>WhatsApp Chat Analyzer</h3>
+        <p>An AI-powered app that analyzes exported WhatsApp chats, sentiment analysis, toxicity detection, emoji usage, word frequency, and full chat statistics.</p>
+        <div class="project-tags">
+          <span>python</span><span>streamlit</span><span>nlp</span><span>machine-learning</span>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/areebamalik0/WhatsApp-Chat-Analyzer" target="_blank" rel="noopener" class="btn btn-ghost small">$ git clone</a>
+          <a href="https://whatsapp-chat-analyzer-areebamalik.streamlit.app" target="_blank" rel="noopener" class="btn btn-primary small">$ open demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="term-window project-card">
+      <div class="term-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="term-title">study_assistant.java</span>
+      </div>
+      <div class="term-body">
+        <h3>Smart Personal Study Assistant</h3>
+        <p>A Java Swing desktop app that helps students stay organized with a Pomodoro timer, task manager, notes manager, planner, and progress tracker.</p>
+        <div class="project-tags">
+          <span>java</span><span>swing</span><span>oop</span>
+        </div>
+        <div class="project-buttons">
+          <a href="#" class="btn btn-ghost small">$ git clone</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="term-window project-card">
+      <div class="term-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="term-title">pet_clinic_db.sql</span>
+      </div>
+      <div class="term-body">
+        <h3>Pet Clinic Database</h3>
+        <p>A relational database for managing appointments, pet records, owners, treatments, and clinic staff.</p>
+        <div class="project-tags">
+          <span>mysql</span><span>oracle-sql</span><span>postgresql</span>
+        </div>
+        <div class="project-buttons">
+          <a href="#" class="btn btn-ghost small">$ git clone</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section id="quotes">
+  <div class="quote-block">
+    <p class="quote-line"><span class="ln">1</span><span class="cm">// "Talk is cheap. Show me the code."</span></p>
+    <p class="quote-line"><span class="ln">2</span><span class="cm">// — Linus Torvalds</span></p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2 class="section-title">Education Journey</h2>
+  <div class="commit-log">
+
+    <div class="commit">
+      <div class="commit-node"></div>
+      <div class="commit-body">
+        <p class="commit-meta"><span class="commit-hash">a1f9c2e</span><span class="commit-when">Year 1</span></p>
+        <h3 class="commit-msg">Started BS Computer Science</h3>
+        <p>Began my journey into programming, algorithms, and computer science fundamentals.</p>
+      </div>
+    </div>
+
+    <div class="commit">
+      <div class="commit-node"></div>
+      <div class="commit-body">
+        <p class="commit-meta"><span class="commit-hash">6b3d8f1</span><span class="commit-when">Year 2</span></p>
+        <h3 class="commit-msg">Expanded my skills</h3>
+        <p>Worked on Java, databases, machine learning, and software engineering projects.</p>
+      </div>
+    </div>
+
+    <div class="commit">
+      <div class="commit-node current"></div>
+      <div class="commit-body">
+        <p class="commit-meta"><span class="commit-hash">HEAD</span><span class="commit-when">Current</span></p>
+        <h3 class="commit-msg">Building real projects</h3>
+        <p>Focused on creating practical applications and strengthening my software development skills.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Let's Connect</h2>
+  <div class="term-window contact-term">
+    <div class="term-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="term-title">contact.sh</span>
+    </div>
+    <div class="term-body contact-body">
+      <a class="contact-line" href="mailto:areebamalik2200@gmail.com">
+        <span class="prompt">$</span> open <span class="key">email</span> <span class="arrow-val">areebamalik2200@gmail.com</span>
+      </a>
+      <a class="contact-line" href="https://github.com/areebamalik0" target="_blank" rel="noopener">
+        <span class="prompt">$</span> open <span class="key">github</span> <span class="arrow-val">github.com/areebamalik0</span>
+      </a>
+      <a class="contact-line" href="https://www.linkedin.com/in/areebamalik2200/" target="_blank" rel="noopener">
+        <span class="prompt">$</span> open <span class="key">linkedin</span> <span class="arrow-val">linkedin.com/in/areebamalik2200</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h3>Areeba Malik</h3>
+  <p>"Programs must be written for people to read, and only incidentally for machines to execute."</p>
+  <small>— Harold Abelson</small>
+  <div class="footer-icons">
+    <a href="https://github.com/areebamalik0" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/areebamalik2200/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:areebamalik2200@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+  <p class="copyright">© 2026 Areeba Malik</p>
+</footer>
+
+<button id="topBtn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
