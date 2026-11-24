@@ -17,8 +17,8 @@ setTimeout(() => {
   setTimeout(() => boot.remove(), 600);
 }, 1600);
 
-// Hero role typing effect
-const roles = ['CS Student.', 'ML & NLP Enthusiast.', 'Software Builder.'];
+// Hero roles
+const roles = ['CS Student.', 'Web Developer.', 'AI Enthusiast.'];
 const typingEl = document.getElementById('typing');
 let roleIndex = 0, charIndex = 0, deleting = false;
 
