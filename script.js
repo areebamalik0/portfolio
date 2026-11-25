@@ -18,7 +18,7 @@ setTimeout(() => {
 }, 1600);
 
 // Hero roles
-const roles = ['CS Student.', 'Web Developer.', 'AI Enthusiast.'];
+const roles = ['CS Student.', 'Web Developer.', 'AI & ML Enthusiast.'];
 const typingEl = document.getElementById('typing');
 let roleIndex = 0, charIndex = 0, deleting = false;
 
